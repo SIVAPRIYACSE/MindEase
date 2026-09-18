@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MindEase - Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="auth-body">
+
+
+    <div class="auth-container">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="auth-welcome">
+
+            <div class="welcome-icon">
+                🌿
+            </div>
+
+            <h1>
+                Welcome to<br>
+                <span>MindEase</span>
+            </h1>
+
+            <p>
+                Your peaceful digital space for
+                mental wellness, self-reflection
+                and healthy daily habits.
+            </p>
+
+            <div class="auth-quote">
+
+                ❝ Take a deep breath.
+                You are allowed to slow down. ❞
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="auth-box">
+
+            <h2>
+                Welcome Back 👋
+            </h2>
+
+            <p class="auth-subtitle">
+                Login to continue your wellness journey
+            </p>
+
+
+            <form id="loginForm">
+
+
+                <!-- EMAIL -->
+
+                <div class="input-group">
+
+                    <label>
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <div class="input-group">
+
+                    <label>
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        required>
+
+                </div>
+
+
+                <!-- REMEMBER -->
+
+                <div class="remember-row">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            id="rememberMe">
+
+                        Remember me
+
+                    </label>
+
+                    <a href="#">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+                <!-- NORMAL LOGIN -->
+
+                <button
+                    type="submit"
+                    class="auth-btn">
+
+                    Login 🌿
+
+                </button>
+
+
+                <!-- MASTER ACCESS -->
+
+                <button
+                    type="button"
+                    class="master-btn"
+                    onclick="masterLogin()">
+
+                    🔐 Master Access
+
+                </button>
+
+
+            </form>
+
+
+            <!-- MESSAGE -->
+
+            <p
+                id="loginMessage"
+                class="auth-message">
+            </p>
+
+
+            <div class="divider">
+
+                <span>OR</span>
+
+            </div>
+
+
+            <!-- REGISTER -->
+
+            <p class="register-text">
+
+                Don't have an account?
+
+                <a href="register.html">
+                    Create Account
+                </a>
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

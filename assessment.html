@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MindEase - Assessment</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo"> MindEase</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assessment.html">Assessment</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="tracker.html">Mood Tracker</a></li>
+            <li><a href="guidance.html">Guidance</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<section class="page-header">
+
+    <h1>🧠 Mental Wellness Assessment</h1>
+
+    <p>
+        Take a few moments to reflect on how you have been feeling recently.
+    </p>
+
+</section>
+
+<section class="assessment-container">
+
+    <form id="assessmentForm">
+
+        <div class="question">
+
+            <h3>1. How have you been feeling recently?</h3>
+
+            <label>
+                <input type="radio" name="q1" value="1" required>
+                😊 Very Good
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="2">
+                🙂 Good
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="3">
+                😐 Okay
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="4">
+                😟 Not Good
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <h3>2. How often do you feel stressed?</h3>
+
+            <label>
+                <input type="radio" name="q2" value="1" required>
+                Rarely
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="2">
+                Sometimes
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="3">
+                Often
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="4">
+                Very Often
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <h3>3. How well are you sleeping?</h3>
+
+            <label>
+                <input type="radio" name="q3" value="1" required>
+                Very Well
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="2">
+                Well
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="3">
+                Sometimes Poorly
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="4">
+                Poorly
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <h3>4. How often do you take time to relax?</h3>
+
+            <label>
+                <input type="radio" name="q4" value="1" required>
+                Every Day
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="2">
+                Often
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="3">
+                Sometimes
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="4">
+                Rarely
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <h3>5. Do you feel connected with people around you?</h3>
+
+            <label>
+                <input type="radio" name="q5" value="1" required>
+                Yes, strongly
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="2">
+                Mostly
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="3">
+                Sometimes
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="4">
+                Not much
+            </label>
+
+        </div>
+
+
+        <button type="submit" class="btn">
+            Check My Wellness 🌿
+        </button>
+
+    </form>
+
+
+    <div id="assessmentResult" class="result-box"></div>
+
+</section>
+
+<footer>
+    <p>🌿 MindEase © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

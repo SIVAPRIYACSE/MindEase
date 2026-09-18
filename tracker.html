@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MindEase - Mood Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =================================
+     NAVIGATION
+     ================================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            MindEase
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="assessment.html">
+                    Assessment
+                </a>
+            </li>
+
+            <li>
+                <a href="resources.html">
+                    Resources
+                </a>
+            </li>
+
+            <li>
+                <a href="tracker.html">
+                    Mood Tracker
+                </a>
+            </li>
+
+            <li>
+                <a href="guidance.html">
+                    Guidance
+                </a>
+            </li>
+
+            <li>
+                <span id="welcomeUser"
+                      class="welcome-user">
+                </span>
+            </li>
+
+            <li>
+                <a href="login.html"
+                   class="login-link">
+                    Login
+                </a>
+            </li>
+
+            <li>
+                <a href="#"
+                   class="logout-link"
+                   onclick="logout(); return false;">
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =================================
+     MOOD TRACKER
+     ================================= -->
+
+<section class="tracker-section">
+
+    <div class="tracker-container">
+
+
+        <h1>
+            How are you feeling today? 🌿
+        </h1>
+
+
+        <p class="tracker-intro">
+
+            Take a moment to check in with yourself.
+            Select the mood that best describes how
+            you feel right now.
+
+        </p>
+
+
+
+        <!-- MOOD OPTIONS -->
+
+        <div class="mood-options">
+
+
+            <button
+                type="button"
+                class="mood"
+                onclick="selectMood('😊 Happy')">
+
+                😊
+
+                <span>
+                    Happy
+                </span>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="mood"
+                onclick="selectMood('😌 Calm')">
+
+                😌
+
+                <span>
+                    Calm
+                </span>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="mood"
+                onclick="selectMood('😐 Okay')">
+
+                😐
+
+                <span>
+                    Okay
+                </span>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="mood"
+                onclick="selectMood('😔 Sad')">
+
+                😔
+
+                <span>
+                    Sad
+                </span>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="mood"
+                onclick="selectMood('😰 Stressed')">
+
+                😰
+
+                <span>
+                    Stressed
+                </span>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="mood"
+                onclick="selectMood('😡 Angry')">
+
+                😡
+
+                <span>
+                    Angry
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- NOTE -->
+
+        <div class="mood-note">
+
+            <label for="moodNote">
+
+                Add a note
+                <span>(optional)</span>
+
+            </label>
+
+
+            <textarea
+                id="moodNote"
+                placeholder="Write a few words about how you feel...">
+            </textarea>
+
+        </div>
+
+
+
+        <!-- SAVE BUTTON -->
+
+        <button
+            type="button"
+            class="btn mood-save-btn"
+            onclick="saveMood()">
+
+            Save My Mood 🌿
+
+        </button>
+
+
+
+        <!-- =================================
+             MOOD HISTORY
+             ================================= -->
+
+        <div class="mood-history-section">
+
+            <h2>
+                Your Mood History
+            </h2>
+
+
+            <p>
+                Your previous mood entries will
+                appear here.
+            </p>
+
+
+            <div id="moodHistory">
+
+                <p class="no-moods">
+                    Loading mood history...
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================
+     FOOTER
+     ================================= -->
+
+<footer>
+
+    <p>
+        🌿 MindEase © 2026 |
+        Digital Mental Health Support System
+    </p>
+
+    <p>
+        For educational and wellness support purposes.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
